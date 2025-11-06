@@ -1,0 +1,127 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--sn-stylekit-background-color);
+    color: var(--sn-stylekit-foreground-color);
+}
+
+.recipe-editor {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.property {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.property label {
+    font-weight: 600;
+    min-width: 80px;
+}
+
+.property input[type="text"],
+.property input[type="number"] {
+    padding: 8px;
+    border: 1px solid var(--sn-stylekit-border-color);
+    border-radius: 4px;
+    background-color: var(--sn-stylekit-background-color);
+    color: var(--sn-stylekit-foreground-color);
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+.scale-reference-label {
+    color: var(--sn-stylekit-secondary-foreground-color);
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: var(--sn-stylekit-foreground-color);
+    border-bottom: 1px solid var(--sn-stylekit-border-color);
+    padding-bottom: 5px;
+}
+
+.ingredients-section {
+    width: 100%;
+}
+
+#ingredients-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+#ingredients-table th, #ingredients-table td {
+    border: 1px solid var(--sn-stylekit-border-color);
+    padding: 8px;
+    text-align: left;
+}
+
+#ingredients-table th {
+    background-color: var(--sn-stylekit-background-color-contrast);
+    font-weight: 600;
+}
+
+#ingredients-table input {
+    width: 95%;
+    padding: 6px;
+    border: 1px solid var(--sn-stylekit-border-color);
+    background-color: var(--sn-stylekit-background-color);
+    color: var(--sn-stylekit-foreground-color);
+}
+
+.delete-btn {
+    background-color: var(--sn-stylekit-destructive-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#add-ingredient-btn {
+    padding: 10px 15px;
+    border: 1px solid var(--sn-stylekit-info-color);
+    background-color: var(--sn-stylekit-background-color);
+    color: var(--sn-stylekit-info-color);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#add-ingredient-btn:hover {
+    background-color: var(--sn-stylekit-info-color);
+    color: var(--sn-stylekit-background-color);
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.text-section textarea {
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid var(--sn-stylekit-border-color);
+    border-radius: 4px;
+    background-color: var(--sn-stylekit-background-color);
+    color: var(--sn-stylekit-foreground-color);
+    font-family: inherit;
+    font-size: 14px;
+    resize: vertical;
+}
